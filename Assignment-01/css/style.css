@@ -1,0 +1,317 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 100%;
+}
+
+.flex-header{
+  width: 100%;
+  height: 1200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:url(../img/header.png);
+}
+.site-nav{
+  padding-top: 2rem;
+}
+
+.list-view{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.container-header{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container-header h1{
+  padding-top: 360px;
+  word-spacing: 40px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+}
+.container-header p{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  max-width: 435px;
+}
+.container-header span{
+  font-size: 60px;
+}
+
+
+.flex-something{
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 500px;
+}
+
+.something-new{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+li{
+  font-size: 14px;
+  color: #959595;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  max-width: 580px;
+  padding-bottom: 30px;
+}
+li:first-child{
+  color: #222626;
+  font-weight: 300;
+  font-size: 30px;
+}
+ul li:nth-child(5) {  
+  padding-top: 165px;
+}
+@supports(grid-area: auto){
+
+  .album{
+    height: 550px;
+    max-width: 1200px;
+    margin: 300px auto 100px;
+    color: white;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "a b c"
+    "d d e";
+  }
+  .album h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .album p:first-of-type{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    padding-bottom: 40px;
+  }
+  .album p:last-of-type{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .design-quality{
+    grid-area: a;
+    background-color: #f5989d;
+    padding: 42px 55px ;
+
+  }
+  .built-to-last{
+    grid-area: b;
+    background-color: #615f7d;
+    padding: 42px 55px;
+  }
+  .our-clients{
+    grid-area: c;
+    background-image: url(../img/box-3.jpg);
+    background-size: 100% 100%;
+    padding: 42px 55px;
+  }
+  .sign-up{
+    grid-area: d;
+    background-image: url(../img/box-4.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 42px 55px;
+  }
+  .sign-up p{
+    max-width: 340px;
+  }
+  .picture{
+    grid-area: e;
+    background-color: #82ca9c;
+    padding: 42px 55px;
+  }
+}
+  .details,
+  .reasons{
+    max-width: 1200px;
+    margin: 0 auto 130px;
+  }
+  .details h1,
+  .reasons h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    padding-bottom: 75px;
+  }
+  .look-at-details ul{
+    max-width: 260px;
+  }
+
+  .reasons-onboard ul{
+    max-width: 360px;
+  }
+
+  .look-at-details,
+  .reasons-onboard{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .look-at-details h1,
+  .reasons-onboard h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    padding-bottom: 30px;
+  }
+  .look-at-details p,
+  .reasons-onboard p{
+    color: #959595;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .more-power{
+    width: 100%;
+    height: 870px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(../img/car.jpg);
+    margin-bottom: 100px;
+    
+  }
+  .more-power-content{
+    color: white;
+    padding-top: 450px;
+    margin-left: 350px;
+    width: 450px;
+  }
+  .more-power-content h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 52px;
+    padding-bottom: 45px;
+  }
+  .more-power-content p:first-of-type{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 24px;
+  }
+  .more-power-content p:last-of-type{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  footer{
+    background-color: #192431;
+
+  }
+  .flex-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 480px;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .in-touch{
+    max-width: 570px;
+  }
+  .in-touch h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding-bottom: 24px;
+  }
+  .in-touch p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+
+
+  .links{
+  display: flex;
+  flex-direction: column;
+  max-width: 470px;
+  margin-top: 40px;
+  }
+  .media-icons{
+    display: flex;
+  }
+
+  .media-icons li{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding-bottom: 24px;
+  }
+  .media-icons li:first-of-type{
+    margin-right: auto;
+  }
+  .fab:hover{
+    cursor: pointer;
+    color: white;
+  }
+ 
+  .fa-facebook-square{
+    color: #38548f;
+  }
+  .fa-twitter-square{
+    padding: 0 10.5px;
+    color: #32cdfb;
+  }
+  .fa-linkedin{
+    color: #2686b9;
+  }
+
+  .row-3 p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #57697f;
+    max-width: 350px;
+  }
+
+.row-2{
+  margin-bottom: 15px;
+}
+.row-2 input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  width: 400px;
+}
+
+.row-2 button {
+  padding: 10px 10px;
+  background: #82ca9c;
+  font-size: 17px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.row-2 button:hover {
+  background: #2686b9;
+}
+
+    
+    
+
